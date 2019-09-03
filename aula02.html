@@ -30,7 +30,7 @@
         if (nome == "jefferson" && sobrenome == "lima"){
            document.write(`Olá ${nome +" "+ sobrenome}`)
        }*/
-
+//----------------------------------------------------------
        /*
        var pontos = 50
 
@@ -39,7 +39,7 @@
        } else{
            document.write("Perdeu")
        }*/
-
+//----------------------------------------------------------
        //if com múltiplos retornos
        /*
        let nota = 45
@@ -54,10 +54,10 @@
 
        document.write(res)
        */
-
+//----------------------------------------------------------
        //IF ANINHADO
-
-       let nota = 16
+       /*
+       let nota = 20
        let res
 
        if(nota >= 60){
@@ -72,14 +72,71 @@
        }else{
            if(nota < 40){
             res="Reprovado"
-                if(nota > 20){
+                if(nota >= 20){
                     res+=" por nota baixa"
                 }else{
                     res+=" com louvor"
            }
        }
     }
-       document.write(res)
+       document.write(res)*/
+//----------------------------------------------------------
+       //USO DAS CHAVES
+    /*
+    let num = 11
+    if(num > 10) res = "maior que dez"  //usa {} quando tem mais de uma linha de instrução
+    else res = "Menor que dez"
+    document.write(res)
+    */
+//----------------------------------------------------------
+    //SWITH.. CASE
+    /*
+    let position
+    position = 4
+    
+    switch (position) {
+        case 1:
+            msg="primeiro lugar"
+            break
+        case 2:
+            msg="Segundo lugar"
+            break
+        case 3:
+            msg="Terceiro lugar"
+            break
+        default:
+            msg="Não foi ao pódio"
+            break
+    }
+        document.write(msg)
+    */
+//----------------------------------------------------------
+    //ARRAYS
+    /*
+    let cor = [] //cria o array
+    cor.push("preto") //cor.push insere um elemento no FINAL do array cor 
+    cor.push("verde")
+    cor.push("marron")
+    //document.write(cor[0])//mostra o elemento no indice zero
+    //cor.unshift("vermelho") //insere um elemento no início do array
+    //cor.pop()//remove o ultimo elemento 
+    //cor.shift()//retira o primeiro elemento
+    //cor.splice(1,2) //(1->a partir do elemento no indice 2->remove elementos)
+    //document.write(cor) //mostra todos os elementos do array
+
+    let position = cor.indexOf("verde")
+        if(position < 0){
+            document.write("Intem  não está na lista")
+        }else{
+            document.write(`Ítem está na lista <br> Posição: ${position}`)
+        }
+    */
+    let num = [7,8,9,4,5,6,1,2,3,0]
+    let numeros
+    document.write(num.sort()) //ordena os números de forma crescente
+    //document.write(num.reverse())//ordena de forma decrescente
+    document.write(num.concat())
+    
     </script>
 
 </head>
