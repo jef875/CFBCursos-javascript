@@ -40,7 +40,46 @@
            document.write("Perdeu")
        }*/
 
-       
+       //if com múltiplos retornos
+       /*
+       let nota = 45
+       let res
+       if(nota >= 60){
+           res ="Aprovado"
+       }else if(nota >= 40){
+            res = "Reculperação"
+       }else{
+           res ="Reprovado"
+       }
+
+       document.write(res)
+       */
+
+       //IF ANINHADO
+
+       let nota = 16
+       let res
+
+       if(nota >= 60){
+           res="Aprovado"
+           if(nota >= 95){
+               res+=" com louvor"
+           }else{
+               res+=" normal"
+           }
+       }else if(nota >= 40){
+           res="Reculperação"
+       }else{
+           if(nota < 40){
+            res="Reprovado"
+                if(nota > 20){
+                    res+=" por nota baixa"
+                }else{
+                    res+=" com louvor"
+           }
+       }
+    }
+       document.write(res)
     </script>
 
 </head>
