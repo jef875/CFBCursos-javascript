@@ -173,10 +173,43 @@
         }
         document.write("<br>")
     }*/
+//----------------------------------------------------------
+    //WHILE
+    /*
+    let num = 0 
+    while (num <=10) {
+        document.write(`${num} <br>`)
+        num++
+    }
+    */
+
+    //DO WHILE
+    /*
+    let num = 0
+    do{
+        document.write("Executando<br>")
+        num++
+    }while(num<10)
+    */
+//----------------------------------------------------------
+    //Aula 22 - TRATAMENTO DE ERROS
+    /*
+    var num
+    try { //Código que pode ocorrer erro
+        num = prompt("Digite um valor de 0 a 10")
+        if(num > 10){
+            throw new Error("Valor inválido, digite de 0(zero) a 10(dez)") //throw new Error gera um erro manualmente
+        }
+        document.write("Valor: "+num)        
+    } catch (error) { //tratamento do erro
+        console.log("Erro: " +error.message)
+        num = 10
+    }finally{
+        document.write("Valor: "+num)
+    }
+    */
+    
     </script>
-
-
-
 </head>
 <body>
 
